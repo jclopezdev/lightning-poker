@@ -1,0 +1,46 @@
+[31mF[0m[31mF[0m
+
+Failures:
+
+  1) a playing card has a suit
+     [31mFailure/Error:[0m
+     [31m  [0m[32mdef[0m [1;34minitialize[0m([35msuite[0m:, [35mrank[0m:)[0m
+     [31m    [0m@suit = suit[0m
+     [31m    [0m@rank = [32mcase[0m rank[0m
+     [31m    [0m[32mwhen[0m [33m:jack[0m [32mthen[0m [1;34m11[0m[0m
+     [31m    [0m[32mwhen[0m [33m:queen[0m [32mthen[0m [1;34m12[0m[0m
+     [31m    [0m[32mwhen[0m [33m:king[0m [32mthen[0m [1;34m13[0m[0m
+     [31m    [0m[32melse[0m rank[0m
+     [31m    [0m[32mend[0m[0m
+     [31m[0m
+     [31mArgumentError:[0m
+     [31m  missing keyword: suite[0m
+     [36m# ./card.rb:2:in `initialize'[0m
+     [36m# ./card.rb:23:in `new'[0m
+     [36m# ./card.rb:23:in `block (2 levels) in <top (required)>'[0m
+
+  2) a playing card has a rank
+     [31mFailure/Error:[0m
+     [31m  [0m[32mdef[0m [1;34minitialize[0m([35msuite[0m:, [35mrank[0m:)[0m
+     [31m    [0m@suit = suit[0m
+     [31m    [0m@rank = [32mcase[0m rank[0m
+     [31m    [0m[32mwhen[0m [33m:jack[0m [32mthen[0m [1;34m11[0m[0m
+     [31m    [0m[32mwhen[0m [33m:queen[0m [32mthen[0m [1;34m12[0m[0m
+     [31m    [0m[32mwhen[0m [33m:king[0m [32mthen[0m [1;34m13[0m[0m
+     [31m    [0m[32melse[0m rank[0m
+     [31m    [0m[32mend[0m[0m
+     [31m[0m
+     [31mArgumentError:[0m
+     [31m  missing keyword: suite[0m
+     [36m# ./card.rb:2:in `initialize'[0m
+     [36m# ./card.rb:27:in `new'[0m
+     [36m# ./card.rb:27:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 0.00105 seconds (files took 0.20195 seconds to load)
+[31m2 examples, 2 failures[0m
+
+Failed examples:
+
+[31mrspec ./card.rb:22[0m [36m# a playing card has a suit[0m
+[31mrspec ./card.rb:26[0m [36m# a playing card has a rank[0m
+
